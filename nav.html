@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compact Two-Line Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #d84343;
+      font-size: 12px;
+      padding: 4px 10px;
+      color: white;
+    }
+
+    .navbar-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-row:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* overflow: hidden; <-- removes scrollbar */
+  white-space: nowrap;
+}
+
+
+    .menu-item {
+      position: relative;
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+    
+
+    .menu-item a {
+      color: white;
+      text-decoration: none;
+      padding: 4px 5px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    .menu-item a:hover {
+      background-color: #b73333;
+      border-radius: 4px;
+    }
+
+    .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #b73333;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  z-index: 999;
+}
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light whitish on hover */
+  color: white;
+  border-radius: 4px;
+}
+
+
+    .new-label {
+      color: yellow;
+      font-weight: bold;
+      font-size: 10px;
+      margin-left: 4px;
+      animation: blink 1s step-start 0s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+ 
+    .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.main-header .logo {
+  height: 90px;
+  width: auto;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #cc3300;
+  font-weight: 500;
+}
+
+.right-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.right-logos .top-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-logos img {
+  height: 50px;
+}
+
+.mh-name {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 400;
+}
+
+.call-center {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #b22222;
+  font-weight: bold;
+}
+
+.call-center::before {
+  content: '📞 ';
+  font-weight: normal;
+  color: #b22222;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .title {
+    margin: 10px 0;
+  }
+
+  .right-logos {
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .right-logos .top-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .right-logos img {
+    margin: 5px;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="main-header">
+
+      <!-- Left: Department Logo -->
+      <img src="images/MVDM_logo.jpg" alt="MVD Logo" class="logo">
+    
+      <!-- Center: Title -->
+      <div class="title">
+        <h1>Motor Vehicles Department</h1>
+      </div>
+    
+      <!-- Right: Maharashtra name + Logos + Call center -->
+      <div class="right-logos">
+        <div class="top-row">
+          <span class="mh-name">Maharashtra</span>
+          <img src="images/maharashtralogo.png" alt="Maharashtra Logo">
+          <img src="images/emblem_n.png" alt="India Emblem">
+        </div>
+        <div class="call-center">24 x 7 Citizen Call Center : 1800 120 8040 (Toll Free)</div>
+      </div>
+    
+    </div>
+    
+      
+<div class="navbar">
+  <!-- First row -->
+  <div class="navbar-row">
+    <div class="menu-item"><a href="#">Home</a></div>
+    <div class="menu-item"><a href="#">About Us ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">Vision</a>
+        <a href="#">Team</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Acts and Rules ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">MV Act</a>
+        <a href="#">Rules</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Notifications-GR-Circulars ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">Circulars</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Citizen Services ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">License</a>
+        <a href="#">Vehicle Reg.</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Faceless Service Process Flow ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">Details</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Information ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">FAQs</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Road Safety ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">Initiatives</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Tenders <span class="new-label">New</span></a></div>
+    <div class="menu-item"><a href="#">RTS Act</a></div>
+    <div class="menu-item"><a href="#">Media Center ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">Photos</a>
+        <a href="#">Videos</a>
+      </div>
+    </div>
+    <div class="menu-item"><a href="#">Contact Us ▾</a>
+      <div class="dropdown-menu">
+        <a href="#">Phone</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="navbar-row">
+    <div class="menu-item"><a href="#">SOP for AIS 140 Certified VLTD Manufacturers <span class="new-label">New</span></a></div>
+    <div class="menu-item"><a href="#">HSRP <span class="new-label">New</span></a></div>
+    <div class="menu-item"><a href="#">Auto HPT Bank List <span class="new-label">New</span></a></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HSRP Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce8d5;
+      font-size: 14px;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading-box {
+      background-color: #f59c00;
+      color: white;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 16px;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .breadcrumb span {
+      color: #666;
+    }
+
+    .print-button {
+      background-color: #b0b735;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .print-button:hover {
+      background-color: #9ca52d;
+    }
+
+    .content-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .content-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .content-list li::before {
+      content: "\2714";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #00bcd4;
+      font-size: 14px;
+    }
+
+    .button-group {
+      margin-top: 16px;
+    }
+
+    .button-group button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin-right: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .button-group button:hover {
+      background-color: #45a049;
+    }
+
+    @media print {
+      .print-button, .button-group { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header placeholder -->
+  <div id="header"></div>
+
+  <main>
+    <div class="container">
+      <div class="header-section">
+        <div class="left-header">
+          <div class="heading-box">HSRP</div>
+          <div class="breadcrumb">
+            » You are here : <span> » Home » HSRP</span>
+          </div>
+        </div>
+        <a href="javascript:window.print();" class="print-button">🖨️ Print</a>
+      </div>
+
+      <ul class="content-list">
+        <li>Vehicles which are registered on or after 01.04.2019 and are already fitted with HSRP plates are not required to apply again for fitment of HSRP</li>
+        <li>If vehicle owners visit the HSRP fitment centre then they will not be charged anything extra for fitment but if they opt for availing the fitment of HSRP at their home, then they will have to pay extra charges to the vendor.</li>
+        <li>If the bulk booking is done for 25 or more vehicles for the same location (Society/Parking lot/Office, etc.), concerned vehicle owners will not be charged any additional Home fitment charges for affixation of HSRP.</li>
+        <li>Although a vehicle registered at any RTO office in Maharashtra can have its HSRP fitment at an HSRP fitment centre in other cities in the state by an agency that affixes HSRP. The concerned vehicle owners should choose a fitment centre near their residence or place of work.</li>
+      </ul>
+
+      <div class="button-group">
+        <button onclick="window.location.href='http://localhost:8000/hrps-booking.html'">Continue</button>
+        <button onclick="window.location.href='https://transport.maharashtra.gov.in/ZoneWiseWebsiteRedirect.html';">HSRP Online Booking</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <!-- JS to load nav and footer -->
+  <script>
+    // Load header
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  
+</body>
+</html>

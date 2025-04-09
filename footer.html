@@ -1,385 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motor Vehicles Department - Maharashtra</title>
-    <link rel="stylesheet" href="../styles.css">
-    <meta charset="UTF-8">
-    <style>
-      .container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #003366;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.print-btn {
-  background: white;
-  color: #003366;
-  border: none;
-  padding: 6px 10px;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.filter-box {
-  background-color: #f0f4f9;
-  padding: 15px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-}
-
-.filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.filter-item {
-  flex: 1 1 200px;
-  display: flex;
-  flex-direction: column;
-}
-
-.filter-item label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.filter-item input,
-.filter-item select {
-  padding: 7px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.filter-btns {
-  margin-top: 15px;
-}
-
-.btn {
-  padding: 8px 14px;
-  border: none;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.search-btn {
-  background-color: #003366;
-  color: white;
-}
-
-.clear-btn {
-  background-color: #d9534f;
-  color: white;
-}
-
-.doc-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-  background-color: #fff;
-  margin-bottom: 40px;
-}
-
-.doc-table th {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
-  font-size: 14px;
-}
-
-.doc-table td {
-  padding: 8px;
-  border: 1px solid #ccc;
-  font-size: 13.5px;
-}
-
-.doc-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.pdf-icon {
-  height: 20px;
-  width: auto;
-}
-
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>.mv-footer {
+    background-color: #2c2c2c;
+    color: #ddd;
+    padding: 10px 20px;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .footer-links a {
+    color: #f0e68c;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info {
+    flex: 1;
+    font-size: 11px;
+    text-align: left;
+    line-height: 1.4;
+  }
+  
+  .footer-logo {
+    flex-shrink: 0;
+    text-align: right;
+  }
+  
+  .footer-logo img {
+    height: 40px;
+  }
+  </style>
 </head>
 <body>
-    <!-- ========== HEADER SECTION ========== -->
-    <header>
-
-        <!-- ========== TOP NAVIGATION BAR ========== -->
-        <div class="top-bar">
-
-            <!-- Search Bar -->
-<div class="search-container">
-    <input type="text" placeholder="Search here">
-    <button class="search-btn">🔍</button>
-</div>
-
-
-            <!-- Navigation Links -->
-            <nav>
-                <a href="#">LogIn</a>
-                <a href="#">Skip to Navigation</a>
-                <a href="#">Skip to Content</a>
-
-                <!-- Font Size Adjustment Options -->
-                <span class="font-size">A-- A- A A+ A++</span>
-
-                <!-- Language Dropdown (Optional) -->
-                <select id="language">
-                    <option>English</option>
-                    <option>मराठी</option>
-                </select>
-            </nav>
-        </div>
-
-        <!-- ========== MAIN HEADER CONTENT ========== -->
-        <div class="main-header">
-
-            <!-- Left: Department Logo -->
-            <img src="../images/MVDM_logo.jpg" alt="MVD Logo" class="logo">
-
-            <!-- Center: Title -->
-            <div class="title">
-                <h1>Motor Vehicles Department,</h1>
-                <h2>Maharashtra</h2>
-            </div>
-
-            <!-- Right: Contact Info & Additional Logos -->
-            <div class="right-logos">
-                
-                <img src="../images/maharashtralogo.png" alt="Maharashtra Logo">
-                <img src="../images/emblem_n.png" alt="India Logo">
-                <p>📞 24 x 7 Citizen Call Center: <b>1800 120 8040 (Toll Free)</b></p>
-            </div>
-
-        </div>
-    </header>
-<!-- RED NAVIGATION BAR -->
-<nav class="red-navbar">
-    <!-- Hamburger Button for Mobile -->
-    <button class="hamburger-menu">&#9776;</button>
-
-    <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-            <a href="#">About Us ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="../about/establisment.html">Establishment</a></li>
-                <li><a href="#" id="orgStructureLink">Organization Structure</a></li>
-                <li><a href="#" id="orgRevenueLink">Reveneu Information</a></li>
-                <li><a href="#" id="orgNumberofVehiclesLink">Number of Vehicles</a></li>
-                <li><a href="#" id="orgBCILink">Border Checkpoint Information</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Acts and Rules ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="../acts/deparment-mannual.html">Deparment Mannual</a></li>
-                <li><a href="../acts/animal-act.html">Animal Cruelty Act</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Notifications-GR-Circulars ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="schemes.html">Various Schemes</a></li>
-            </ul>
-        </li>      
-        <li class="dropdown">
-            <a href="#">Citizen Services ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="https://locator.csccloud.in/" target="_blank">Aple Sarkar Seva Kendra</a></li>
-
-                <li><a href="../Upload/Know Your RTO.pdf">Know Your RTO</a></li>            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Faceless Service Process Flow ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="../fspf/sarthi.html">Sarthi Related Faceless Service</a></li>
-                <li><a href="../fspf/vahan.html">Vahan Related Faceless Service</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Information ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="../information/penalties.html">Offences and Penaltites</a></li>
-
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#">Road Safety ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="../Upload/Information about road safety activities.pdf">Information About Road Safety</a></li>
-                <li><a href="#">Safety Campaigns</a></li>
-            </ul>
-        </li>
-        <li><a href="../tender.html">Tenders <span class="new-tag">New</span></a></li>
-        <!-- <li><a href="#">RTS Act</a></li>
-        <li class="dropdown">
-            <a href="#">Media Center ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Press Releases</a></li>
-                <li><a href="#">Photo Gallery</a></li>
-            </ul>
-        </li> -->
-        <a href="../Upload/Officers_Contact_List-2025.pdf">Contact Us </a>
-    </ul>
-</nav>
-<div class="container">
-    <div class="header">
-      <span>Auto / Taxi stand</span>
-      <button class="print-btn" onclick="window.print()">🖨️ Print</button>
+  <footer class="mv-footer">
+    <div class="footer-links">
+      <a href="#">Accessibility Statement</a> |
+      <a href="#">Disclaimer and Policies</a> |
+      <a href="#">Sitemap</a> |
+      <a href="#">Help</a> |
+      <a href="#">Terms and Condition</a> |
+      <a href="#">Feedback</a>
     </div>
-  
-    <div class="filter-box">
-      <div class="filter-row">
-        <div class="filter-item">
-          <label>From Date</label>
-          <input type="date" />
-        </div>
-        <div class="filter-item">
-          <label>To Date</label>
-          <input type="date" />
-        </div>
-        <div class="filter-item">
-          <label>Document Type</label>
-          <select>
-            <option>ALL</option>
-          </select>
-        </div>
-        <div class="filter-item">
-          <label>Keyword Search</label>
-          <input type="text" />
-        </div>
-      </div>
-  
-      <div class="filter-btns">
-        <button class="btn search-btn">Search</button>
-        <button class="btn clear-btn">Clear</button>
-      </div>
+    <div class="footer-info">
+      <p>© This is the official website of Motor Vehicles Department, Maharashtra. All Rights Reserved.</p>
+      <p>Last Reviewed: 04-04-2025</p>
     </div>
-  
-    <table class="doc-table">
-      <thead>
-        <tr>
-          <th>Sr. No.</th>
-          <th>Subject</th>
-          <th>Date</th>
-          <th>Size (MB)</th>
-          <th>Download</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Pen RTO</td>
-          <td>31/07/2019</td>
-          <td>0.50</td>
-          <td>
-            <a href="#"><img src="pdf-icon.png" alt="PDF" class="pdf-icon" /></a>
-          </td>
-        </tr>
-       
-      </tbody>
-    </table>
-  </div>
-  
-<!-- <script>
-const data = [
-  { sr: 1, subject: "INSURANCE OF MOTOR VEHICLES AGAINST THIRD PARTY RISKS", date: "2015-11-03", size: "0.21", type: "Insurance", file: "../Upload/INSURANCE_OF_MOTOR_VEHICLES_AGAINST_THIRD_PARTY_RISKS.pdf" },
-  { sr: 2, subject: "ISSUE OF LEARNER'S LICENSES", date: "2015-11-03", size: "0.36", type: "License", file: "pdfs/learners.pdf" },
-  { sr: 3, subject: "CONDUCTOR LICENSE", date: "2015-11-03", size: "0.33", type: "License", file: "../Upload/CONDUCTOR_LICENSE.pdf" },
-  { sr: 4, subject: "LIABILITY WITHOUT FAULT IN CERTAIN CASES", date: "2015-11-03", size: "0.16", type: "Insurance", file: "../Upload/LIABILITY_WITHOUT_FAULT_IN_CERTAIN_CASES.pdf" },
-];
-
-function loadTable(rows) {
-  const table = document.getElementById('tableBody');
-  table.innerHTML = "";
-  rows.forEach(row => {
-    table.innerHTML += `
-      <tr>
-        <td>${row.sr}</td>
-        <td>${row.subject}</td>
-        <td>${new Date(row.date).toLocaleDateString()}</td>
-        <td>${row.size}</td>
-        <td><a href="${row.file}" target="_blank"><img class="pdf-icon" src="images/pdf-icon.png" alt="PDF"></a></td>
-      </tr>
-    `;
-  });
-}
-
-function filterTable() {
-  const from = document.getElementById('fromDate').value;
-  const to = document.getElementById('toDate').value;
-  const type = document.getElementById('docType').value;
-  const keyword = document.getElementById('keyword').value.toLowerCase();
-
-  const filtered = data.filter(item => {
-    const date = new Date(item.date);
-    const fromDate = from ? new Date(from) : null;
-    const toDate = to ? new Date(to) : null;
-    const matchesDate = (!fromDate || date >= fromDate) && (!toDate || date <= toDate);
-    const matchesType = type === "ALL" || item.type === type;
-    const matchesKeyword = item.subject.toLowerCase().includes(keyword);
-    return matchesDate && matchesType && matchesKeyword;
-  });
-
-  loadTable(filtered);
-}
-
-function clearFilters() {
-  document.getElementById('fromDate').value = '';
-  document.getElementById('toDate').value = '';
-  document.getElementById('docType').value = 'ALL';
-  document.getElementById('keyword').value = '';
-  loadTable(data);
-}
-
-window.onload = () => loadTable(data);
-</script> -->
-
-<!-- Footer -->
-<div class="footer">
-    <p>
-        <a href="#">Accessibility Statement</a> |
-        <a href="#">Disclaimer and Policies</a> |
-        <a href="#">Sitemap</a> |
-        <a href="#">Help</a> |
-        <a href="#">Terms and Condition</a> |
-        <a href="#">Feedback</a>
-    </p>
-    <p>© This is the official website of Motor Vehicles Department, Maharashtra. All Rights Reserved.</p>
-    <p>Last Reviewed: 21-03-2025</p>
     <div class="footer-logo">
-        <img src="../images/Maha_IT_Logo.png" alt="MahaIT Logo">
+      <img src="images/Maha_IT_Logo.png" alt="MahaIT Logo" />
     </div>
-</div>
-<script src="../script.js"></script>
+  </footer>
+  
 </body>
 </html>
-

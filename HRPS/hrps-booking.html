@@ -1,12 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1>I am PRO</h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HSRP Information</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fbe4ce;
+      font-size: 14px;
+    }
+    
+    .container {
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: 20px auto;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .header {
+      background-color: #f39c12;
+      color: white;
+      font-weight: bold;
+      padding: 8px 15px;
+      font-size: 18px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    
+    /* Form wrapper */
+    .filter-form {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    
+    .filter-section {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 4px;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    
+    .input-group {
+      flex: 1;
+      min-width: 200px;
+      margin-right: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .btn {
+      padding: 8px 16px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .btn.blue {
+      background-color: #3498db;
+    }
+    
+    .btn.red {
+      background-color: #e74c3c;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    thead th {
+      background-color: #5d87b5;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      font-size: 15px;
+    }
+    
+    tbody td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      font-size: 15px;
+    }
+    
+    .download-icon {
+      font-size: 20px;
+      color: #d9534f;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Header placeholder: will load nav content (flush with top edge) -->
+  <div id="header"></div>
+
+  <div class="container">
+    <div class="header">HSRP</div>
     
+    <!-- Wrapped filter form with top and bottom spacing inside container -->
+    <form class="filter-form">
+      <div class="filter-section">
+        <div class="row">
+          <div class="input-group">
+            <label>From Date</label>
+            <input type="date">
+          </div>
+          <div class="input-group">
+            <label>To Date</label>
+            <input type="date">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label>Document Type</label>
+            <select>
+              <option value="ALL">ALL</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Keyword Search</label>
+            <input type="text" placeholder="">
+          </div>
+        </div>
+        <div class="button-group">
+          <button class="btn blue" type="submit">Search</button>
+          <button class="btn red" type="reset">Clear</button>
+        </div>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Subject</th>
+          <th>Date</th>
+          <th>Size (MB)</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Rosmerta Fitment Centres Zone -1</td>
+          <td>26/12/2024</td>
+          <td>0.85</td>
+          <td><i class="fas fa-file-pdf download-icon"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Real Fitment Centres Zone -2</td>
+          <td>26/12/2024</td>
+          <td>0.12</td>
+          <td><i class="fas fa-file-pdf download-icon"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>FTA Fitment center list Zone-3</td>
+          <td>26/12/2024</td>
+          <td>0.16</td>
+          <td><i class="fas fa-file-pdf download-icon"></i></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Annexure A HSRP Zone</td>
+          <td>24/12/2024</td>
+          <td>0.52</td>
+          <td><i class="fas fa-file-pdf download-icon"></i></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Extended date for HSRP affixation : 30.06.2025</td>
+          <td>21/03/2025</td>
+          <td>0.58</td>
+          <td><i class="fas fa-file-pdf download-icon"></i></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>SOP for High Security Registration Plate on Vehicles Registered prior to 01.04.2019</td>
+          <td>13/12/2024</td>
+          <td>5.76</td>
+          <td><i class="fas fa-file-pdf download-icon"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Footer placeholder: will load footer content (flush with bottom edge) -->
+  <div id="footer"></div>
+
+  <!-- JS to load nav and footer -->
+  <script>
+    // Load header (navigation)
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  
+  <!-- Include Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>
+<!--  -->

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acts and Rules</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce8d5;
+      font-size: 12px;
+    }
+    
+    .container {
+      background-color: white;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading-box {
+      background-color: #f59c00;
+      color: white;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 16px;
+      margin-bottom: 0px;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .breadcrumb span {
+      color: #666;
+    }
+
+    .print-button {
+      background-color: #b0b735;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .print-button:hover {
+      background-color: #9ca52d;
+    }
+
+    @media print {
+      .print-button, .button-group { display: none; }
+    }
+    /* Form wrapper */
+    .filter-form {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    
+    .filter-section {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 4px;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    
+    .input-group {
+      flex: 1;
+      min-width: 200px;
+      margin-right: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .btn {
+      padding: 8px 16px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .btn.blue {
+      background-color: #3498db;
+    }
+    
+    .btn.red {
+      background-color: #e74c3c;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    
+    thead th {
+      background-color: #5d87b5;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      font-size: 15px;
+    }
+    
+    tbody td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      font-size: 13px;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <!-- Header placeholder -->
+<div id="header"></div>
+
+  <main>
+    <div class="container">
+      <div class="header-section">
+        <div class="left-header">
+          <div class="heading-box">License Fee</div>
+          <div class="breadcrumb">
+            » You are here : <span> » Information » Fees » License Fee  </span>
+          </div>
+        </div>
+        <a href="javascript:window.print();" class="print-button">🖨️ Print</a>
+      </div>
+     
+  
+      <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Nature of Services</th>
+                <th>Form No.</th>
+                <th>Documents</th>
+                <th>Class of vehicle</th>
+                <th>Fee in Rs.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Learner's License.</td>
+                <td>
+                  1. <span style="color: red;">Form 1</span><br>
+                  2. <span style="color: red;">Form 2</span>
+                </td>
+                <td>
+                  1. <span style="color: red;">Address proof.</span><br>
+                  2. Age proof.<br>
+                  3. Medical certificate <span style="color: red;">Form 1-A</span>.<br>
+                  4. Passport size photographs (3nos).
+                </td>
+                <td>All vehicle.</td>
+                <td>
+                  151 for each class<br>
+                  Test fee - 50.
+                </td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Permanent License.</td>
+                <td>1. <span style="color: red;">Form 4</span></td>
+                <td>
+                  1. Learner's License.<br>
+                  2. Passport size photo (3nos).
+                </td>
+                <td>All vehicles.</td>
+                <td>716</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Renewal of License.</td>
+                <td>
+                  1. <span style="color: red;">Form 1</span><br>
+                  2. <span style="color: red;">Form 9</span>
+                </td>
+                <td>
+                  1. Medical certificate <span style="color: red;">Form 1-A</span>.<br>
+                  2. Passport size photo (2nos).
+                </td>
+                <td>All vehicles.</td>
+                <td>
+                  416<br>
+                  Rs. 1000/- fine if applied after grace period.
+                </td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Duplicate License.</td>
+                <td>1. <span style="color: red;">L.L.D.</span></td>
+                <td>
+                  1. Old License/police report if its lost.<br>
+                  2. Passport size photo (2nos).
+                </td>
+                <td>All vehicles.</td>
+                <td>216</td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>Addition of another class of vehicles to the driving License.</td>
+                <td>1. <span style="color: red;">Form 8</span></td>
+                <td>
+                  1. Old License.<br>
+                  2. Photo (2nos).<br>
+                  3. Learner's for new class.
+                </td>
+                <td>All vehicles.</td>
+                <td>1016</td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>International Driving Permit (IDP).</td>
+                <td>1. IDP (<span style="color: red;">Form 4A</span>)</td>
+                <td>
+                  1. Motor Driving License.<br>
+                  2. Original Passport.<br>
+                  3. Original Visa.<br>
+                  4. <span style="color: red;">Form 1A</span><br>
+                  5. 4 Photographs
+                </td>
+                <td>All vehicles.</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>7.</td>
+                <td>Authorization to drive public service vehicle.</td>
+                <td>1. <span style="color: red;">L.P.S.A.</span></td>
+                <td>
+                  1. Domicile certificate Form S.E.G. from Tehasildar.<br>
+                  2. Character certificate from S.P/Police Commissioner.<br>
+                  3. Medical certificate.<br>
+                  4. <span style="color: red;">Address proof</span>.<br>
+                  5. Driving License.
+                </td>
+                <td>Public service vehicles.</td>
+                <td>766</td>
+              </tr>
+              <tr>
+                <td>8.</td>
+                <td>Duplicate Authorization.</td>
+                <td>1. <span style="color: red;">D.T.V.B.</span></td>
+                <td>
+                  1. Police report in case it is lost.<br>
+                  2. Driving License.
+                </td>
+                <td>Public service vehicles.</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>9.</td>
+                <td>Conductor License & Badge.</td>
+                <td>1. <span style="color: red;">L.con.A.</span></td>
+                <td>
+                  1. S.S.C. certificate.<br>
+                  2. Medical certificate Form M.C.con.<br>
+                  3. Character certificate from S.P/Police Commissioner.<br>
+                  4. Passport size photo (3nos).
+                </td>
+                <td>Stage carriers.</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td>10.</td>
+                <td>Renewal of Conductor’s License.</td>
+                <td>1. <span style="color: red;">L.con.R</span></td>
+                <td>
+                  1. Medical certificate Form M.C.con.<br>
+                  2. Photo (2nos).
+                </td>
+                <td>Stage carriers.</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>11.</td>
+                <td>Duplicate badge for conductor's License.</td>
+                <td>1. <span style="color: red;">D.C.B.</span></td>
+                <td>
+                  1. Police report if it is lost.
+                </td>
+                <td>Stage carriers.</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>12.</td>
+                <td>Duplicate of conductor’s License.</td>
+                <td>1. <span style="color: red;">C.L.D</span></td>
+                <td>
+                  1. Police report /defaced or torn License
+                </td>
+                <td>Stage carriers.</td>
+                <td>100</td>
+              </tr>
+        
+        </tbody>
+        
+      </table>
+      
+     </div>
+  </main>
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <!-- JS to load nav and footer -->
+  <script>
+    // Load header
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+<script>
+    const rowsPerPage = 10;
+    const rows = Array.from(document.querySelectorAll("#table-body tr"));
+    const totalPages = Math.ceil(rows.length / rowsPerPage);
+    const paginationDiv = document.querySelector(".pagination");
+  
+    function showPage(page) {
+      const start = (page - 1) * rowsPerPage;
+      const end = start + rowsPerPage;
+  
+      rows.forEach((row, index) => {
+        row.style.display = (index >= start && index < end) ? "" : "none";
+      });
+  
+      // Highlight the active page number
+      const pageLinks = paginationDiv.querySelectorAll("a");
+      pageLinks.forEach(link => link.classList.remove("active"));
+      pageLinks[page - 1]?.classList.add("active");
+    }
+  
+    function setupPagination() {
+      paginationDiv.innerHTML = ""; // Clear existing buttons
+  
+      for (let i = 1; i <= totalPages; i++) {
+        const a = document.createElement("a");
+        a.href = "#";
+        a.textContent = i;
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          showPage(i);
+        });
+        paginationDiv.appendChild(a);
+      }
+  
+      showPage(1); // Show first page on load
+    }
+  
+    setupPagination();
+  </script>
+  
+</body>
+</html>

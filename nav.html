@@ -36,6 +36,17 @@
   /* overflow: hidden; <-- removes scrollbar */
   white-space: nowrap;
 }
+.navbar-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.navbar-row:nth-child(2) {
+  justify-content: left;
+  gap: 6px;
+}
 
 
     .menu-item {
@@ -279,6 +290,43 @@
     justify-content: flex-start;
   }
 }
+.submenu-container {
+  position: relative;
+}
+
+.submenu-container > a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #b73333;
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.submenu-container:hover .dropdown-submenu {
+  display: block;
+}
+
+.dropdown-submenu a {
+  padding: 5px 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-submenu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
 
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -342,16 +390,16 @@
 <div class="navbar">
   <!-- First row -->
   <div class="navbar-row">
-    <div class="menu-item"><a href="#">Home</a></div>
+    <div class="menu-item"><a href="/index.html">Home</a></div>
     <div class="menu-item"><a href="#">About Us ▾</a>
       <div class="dropdown-menu">
-        <a href="Upload/Total MVD Serivces.pdf">MVD Services</a>
+        <a href="/Upload/Total MVD Serivces.pdf">MVD Services</a>
         <a href="#">Team</a>
       </div>
     </div>
     <div class="menu-item"><a href="#">Acts and Rules ▾</a>
       <div class="dropdown-menu">
-        <a href="actsandrules/act-rule.html">Acts and Rules</a>
+        <a href="/actsandrules/act-rule.html">Acts and Rules</a>
         <a href="#">Rules</a>
       </div>
     </div>
@@ -362,7 +410,7 @@
     </div>
     <div class="menu-item"><a href="#">Citizen Services ▾</a>
       <div class="dropdown-menu">
-        <a href="#">License</a>
+        <a href="/Upload/Know Your RTO.pdf">Know Your RTO</a>
         <a href="#">Vehicle Reg.</a>
       </div>
     </div>
@@ -373,16 +421,25 @@
     </div>
     <div class="menu-item"><a href="#">Information ▾</a>
       <div class="dropdown-menu">
-        <a href="#">FAQs</a>
+        <a href="/information/rti-info.html">RTI Information</a>
+        <a href="/information/auto-hike.html">Auto Riksha and Taxi are </a>
+        <div class="submenu-container">
+          <a href="#">Fees ▸</a>
+          <div class="dropdown-submenu">
+            <a href="/information/license.html">License Fees</a>
+            <a href="/information/registration.html">Registration Fees</a>
+            <!-- <a href="/information/permit.html">Permit Fees</a> -->
+          </div>
+        </div>
       </div>
     </div>
     <div class="menu-item"><a href="#">Road Safety ▾</a>
       <div class="dropdown-menu">
-        <a href="#">Initiatives</a>
+        <a href="/roadsaftey/gallery.html">Initiatives</a>
       </div>
     </div>
     <div class="menu-item"><a href="#">Tenders <span class="new-label">New</span></a></div>
-    <div class="menu-item"><a href="rts.html">RTS Act</a></div>
+    <div class="menu-item"><a href="/rts.html">RTS Act</a></div>
     <div class="menu-item"><a href="#">Media Center ▾</a>
       <div class="dropdown-menu">
         <a href="#">Photos</a>
@@ -400,7 +457,7 @@
   <!-- Second row -->
   <div class="navbar-row">
     <div class="menu-item"><a href="#">SOP for AIS 140 Certified VLTD Manufacturers <span class="new-label">New</span></a></div>
-    <div class="menu-item"><a href="HRPS/hsrp.html">HSRP <span class="new-label">New</span></a></div>
+    <div class="menu-item"><a href="/HRPS/hsrp.html">HSRP <span class="new-label">New</span></a></div>
     <div class="menu-item"><a href="#">Auto HPT Bank List <span class="new-label">New</span></a></div>
   </div>
 </div>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acts and Rules</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce8d5;
+      font-size: 12px;
+    }
+    
+    .container {
+      background-color: white;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading-box {
+      background-color: #f59c00;
+      color: white;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 16px;
+      margin-bottom: 0px;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .breadcrumb span {
+      color: #666;
+    }
+
+    .print-button {
+      background-color: #b0b735;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .print-button:hover {
+      background-color: #9ca52d;
+    }
+
+    @media print {
+      .print-button, .button-group { display: none; }
+    }
+    /* Form wrapper */
+    .filter-form {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    
+    .filter-section {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 4px;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    
+    .input-group {
+      flex: 1;
+      min-width: 200px;
+      margin-right: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .btn {
+      padding: 8px 16px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .btn.blue {
+      background-color: #3498db;
+    }
+    
+    .btn.red {
+      background-color: #e74c3c;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    
+    thead th {
+      background-color: #5d87b5;
+      color: white;
+      padding: 10px;
+      text-align: left;
+      font-size: 15px;
+    }
+    
+    tbody td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      font-size: 13px;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <!-- Header placeholder -->
+<div id="header"></div>
+
+  <main>
+    <div class="container">
+      <div class="header-section">
+        <div class="left-header">
+          <div class="heading-box">Registration Fee</div>
+          <div class="breadcrumb">
+            » You are here : <span> » Information » Fees » Registration Fee  </span>
+          </div>
+        </div>
+        <a href="javascript:window.print();" class="print-button">🖨️ Print</a>
+      </div>
+     
+  
+      <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Nature of Services</th>
+                <th>Form No.</th>
+                <th>Documents</th>
+                <th>Class of vehicle</th>
+                <th>Fee in Rs.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Registration of new vehicle.</td>
+                <td>Form 20</span></td>
+                <td>
+                  1. Sale certificate Form 21.<br>
+                  2. Road worthiness certificate Form 22, Form 22-A.<br>
+                  3. Purchase invoice (for 2/4 wheeler).<br>
+                  4. Temporary registration (in case vehicle is purchased from other region).<br>
+                  5. Valid insurance certificate.<br>
+                  6. Entry tax NOC (for vehicles purchased outside the state).<br>
+                  7. Income tax declaration in <span style="color: red;">Form 60</span> (except 200).<br>
+                  8. Octroi receipt.<br>
+                  9. Customs clearance certificate along with License & bond (imported vehicle).<br>
+                  10. Body builder certificate Form 22-A/part-II (transport vehicles).<br>
+                  11. Consent letter from financier in case of hypothecation.<br>
+                  12. 7/12 abstract or tehsildar certificate in case of agri tractor/trailer, Form M.T, design approval from transport commissioner.<br>
+                  13. <span style="color: red;">Address proof</span>.<br>
+                  14. Produce vehicle for inspection.
+                </td>
+                <td>
+                  1. Invalid carriage<br>
+                  2. Motor cycle <br>
+                  3. Imported motor cycle <br>
+                  4. Light motor vehicle <br>
+                  5. Medium goods & passenger vehicle <br>
+                  6. Heavy goods vehicle / passenger vehicle<br>
+                  7. Imported motor vehicle <br>
+                  8. Any other vehicle not mentioned above <br>
+                  9. Erickshaw / Ecart <br>
+                  10. Light commercial vehicle <br>
+                </td>
+                <td>
+                    50<br>
+                    300<br>
+                    5000<br>
+                    600<br>
+                    1000<br>
+                    1500<br>
+                    5000<br>
+                    3000<br>
+                    1000<br>
+                    1000<br>
+                                    </td>
+              </tr>
+              <td>2</td>
+              <td>Duplicate certificate of Registration</td>
+              <td>Form 26</td>
+              <td>
+                1. Defaced / torn-out RC or police report if it is lost.<br>
+                2. Consent letter from financier in case of hypothecation.
+              </td>
+              <td>All</td>
+              <td>50% of registration fee of particular class of vehicle.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Renewal of certificate of registration</td>
+              <td>Form 25</td>
+              <td>
+                1. Registration certificate.<br>
+                2. Producing of vehicle for inspection.
+              </td>
+              <td>All</td>
+              <td>As mentioned in Sr. 13</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Assignment of new registration mark (vehicle coming from other states with NOC)</td>
+              <td>
+                Form 27<br>
+                Form AT<br>
+                Form TCR<br>
+                Form 29<br>
+                Form 30 / TCA<br>
+                Form 33
+              </td>
+              <td>
+                1. NOC from original registration authority in Form 28.<br>
+                2. Entry tax NOC.<br>
+                3. Valid insurance certificate.<br>
+                4. Valid PUC.<br>
+                5. Registration certificate (RC) & tax certificate (TC).<br>
+                6. Address proof.<br>
+                7. Octroi receipt.<br>
+                8. Registered owner’s affidavit.<br>
+                9. Vehicle for inspection.
+              </td>
+              <td>All</td>
+              <td>As mentioned in Sr. 1</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Change of address in Registration Certificate</td>
+              <td>Form 33</td>
+              <td>
+                1. New address proof.<br>
+                2. All valid documents of the vehicle.<br>
+                3. NOC from original registering authority in Form 28.
+              </td>
+              <td>All</td>
+              <td>50% of Sr. No. 1</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Transfer of ownership</td>
+                <td>
+                  1. Form 29 (2 nos)<br>
+                  2. Form 30 TCA<br>
+                  3. Form TCR (for transport vehicle)
+                </td>
+                <td>
+                  1. NOC<br>
+                  2. NOC in <strong>Form 28</strong> in case vehicle coming from other region or from other state<br>
+                  3. Address proof<br>
+                  4. Income tax declaration from seller & purchaser in <strong>Form 60</strong> (except 2 wheelers)<br>
+                  5. All valid documents
+                </td>
+                <td>
+                  1. Invalid carriage<br>
+                  2. Motor cycle<br>
+                  3. Imported motor cycle<br>
+                  4. LMV<br>
+                  5. Medium goods & passenger vehicle<br>
+                  6. Heavy goods & pass vehicle<br>
+                  7. Imported motor vehicle<br>
+                  8. Any other vehicle not mentioned above
+                </td>
+                <td>Half of the fee mentioned against Serial No.1</td>
+              </tr>
+              <tr>
+             
+                <td>7</td>
+                <td>Transfer of ownership on death of owner of the vehicle</td>
+                <td>
+                  1. Form 30<br>
+                  2. Form 31
+                </td>
+                <td>
+                  1. Death certificate in relation to the registered owner<br>
+                  2. Succession certificate<br>
+                  3. Affidavit from the successor<br>
+                  4. Address proof<br>
+                  5. All valid documents of vehicle
+                </td>
+                <td>
+                  1. Invalid carriage<br>
+                  2. Motor cycle<br>
+                  3. Imported motor cycle<br>
+                  4. LMV<br>
+                  5. Medium goods & passenger vehicle<br>
+                  6. Heavy goods & pass vehicle<br>
+                  7. Imported motor vehicle<br>
+                  8. Any other vehicle not mentioned above
+                </td>
+                <td>Half of the fee mentioned against Serial No.1</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Transfer of ownership of vehicle purchased in public auction</td>
+                <td>
+                  1. Form 30<br>
+                  2. Form 32
+                </td>
+                <td>
+                  1. Certified copy of the order of govt. authorising the auction of vehicle<br>
+                  2. Order confirming the sale of vehicle in purchaser's favour duly signed by the person authorised to conduct the auction<br>
+                  3. Address proof<br>
+                  4. All valid documents of vehicle
+                </td>
+                <td>
+                  1. Invalid carriage<br>
+                  2. Motor cycle<br>
+                  3. Imported motor cycle<br>
+                  4. LMV<br>
+                  5. Medium goods & passenger vehicle<br>
+                  6. Heavy goods & pass vehicle<br>
+                  7. Imported motor vehicle<br>
+                  8. Any other vehicle not mentioned above
+                </td>
+                <td>Half of the fee mentioned against Serial No.1</td>
+              </tr>
+              
+              <tr>
+                <td>9</td>
+                <td>Transfer of ownership in the name of financier</td>
+                <td>
+                  1. Form 30<br>
+                  2. Form 36
+                </td>
+                <td>
+                  1. Proof of possession of vehicle by financier<br>
+                  2. Proof as to no case is pending in the court of law<br>
+                  3. NOC from registered owner<br>
+                  4. Address proof<br>
+                  5. All valid documents of vehicle
+                </td>
+                <td>
+                  1. Invalid carriage<br>
+                  2. Motor cycle<br>
+                  3. Imported motor cycle<br>
+                  4. LMV<br>
+                  5. Medium goods & passenger vehicle<br>
+                  6. Heavy goods & pass vehicle<br>
+                  7. Imported motor vehicle<br>
+                  8. Any other vehicle not mentioned above
+                </td>
+                <td>Nil</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Endorsement of hire purchase agreement</td>
+                <td>1. Form 34 (2 nos.)</td>
+                <td>
+                  1. Request letter from the financier<br>
+                  2. Insurance certificate<br>
+                  3. R.C.<br>
+                  4. T.C.
+                </td>
+                <td>
+                  1. Motor cycle<br>
+                  2. Three wheeler/LMV<br>
+                  3. Medium or Heavy vehicle
+                </td>
+                <td>
+                  500<br>
+                  1500<br>
+                  3000
+                </td>
+              </tr>
+              
+              <tr>
+                <td>11</td>
+                <td>Termination of hire purchase agreement</td>
+                <td>1. Form 35 (2 nos.)</td>
+                <td>
+                  1. Request letter from the financier<br>
+                  2. Insurance certificate<br>
+                  3. R.C.<br>
+                  4. T.C.
+                </td>
+                <td>All</td>
+                <td>Nil</td>
+              </tr>
+              
+              <tr>
+                <td>12</td>
+                <td>No objection certificate</td>
+                <td>
+                  1. Form 29<br>
+                  2. Form 28 (3 nos. with chassis print)
+                </td>
+                <td>
+                  1. Evidence of pay of motor vehicle tax up to date<br>
+                  2. NOC from prosecution branch of registering authority<br>
+                  3. NOC from police commissioner / SP (for vehicle migrating out of states)<br>
+                  4. All valid documents of vehicle
+                </td>
+                <td>All</td>
+                <td>No fee</td>
+              </tr>
+              
+              <tr>
+                <td>13</td>
+                <td>Renewal of certificate of fitness</td>
+                <td>1. C.F.R.A.</td>
+                <td>
+                  1. Previous certificate of fitness<br>
+                  2. NOC from prosecution branch of registering authority<br>
+                  3. All valid documents<br>
+                  4. Vehicle for inspection
+                </td>
+                <td>
+                  1. 3W./L.M.V. (transport)<br>
+                  2. Medium goods & passenger<br>
+                  3. Heavy goods & passengers<br>
+                  4. 2 W
+                </td>
+                <td>
+                  400<br>
+                  600<br>
+                  600<br>
+                  200
+                </td>
+              </tr>
+              
+              <tr>
+                <td>14</td>
+                <td>Duplicate certificate of fitness</td>
+                <td>1. C.R.L.D.</td>
+                <td>All valid documents of the vehicle</td>
+                <td>All</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Alteration in motor vehicle</td>
+                <td>
+                  1.Form BT</a><br>
+                  2.Form BTI</a>
+                </td>
+                <td>
+                  1. Reason & proof for alteration<br>
+                  2. Purchase invoice along with measurements of engine/chassis/body to be altered<br>
+                  3. NOC from the financier
+                </td>
+                <td>All</td>
+                <td>Half of the fee mentioned against Serial No.1</td>
+              </tr>
+              
+              <tr>
+                <td>16</td>
+                <td>Appeal under Rule 46</td>
+                <td>1.Form 20</a></td>
+                <td></td>
+                <td></td>
+                <td>1000</td>
+              </tr>
+              
+              <tr>
+                <td>17</td>
+                <td>Conducting test of vehicle for Grant/Renewal of F.C.</td>
+                <td>1.Form 38</a></td>
+                <td></td>
+                <td>
+                  2 wheeled vehicle<br>
+                  3 W/Light Motor vehicle<br>
+                  Medium motor vehicle<br>
+                  Heavy motor vehicle
+                </td>
+                <td>
+                  200<br>
+                  400<br>
+                  600<br>
+                  600
+                </td>
+              </tr>
+              
+              <tr>
+                <td>18</td>
+                <td>Grant and Renewal of letter of authority</td>
+                <td>1.</td>
+                <td></td>
+                <td></td>
+                <td>15,000</td>
+              </tr>
+              
+              <tr>
+                <td>19</td>
+                <td>Issue of duplicate letter of authority</td>
+                <td>1.</td>
+                <td></td>
+                <td></td>
+                <td>7,500</td>
+              </tr>
+              
+              <tr>
+                <td>20</td>
+                <td>Appeal under Rule 70</td>
+                <td>1.</td>
+                <td></td>
+                <td></td>
+                <td>3000</td>
+              </tr>
+              
+        </tbody>
+        
+      </table>
+      
+     </div>
+  </main>
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <!-- JS to load nav and footer -->
+  <script>
+    // Load header
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+<script>
+    const rowsPerPage = 10;
+    const rows = Array.from(document.querySelectorAll("#table-body tr"));
+    const totalPages = Math.ceil(rows.length / rowsPerPage);
+    const paginationDiv = document.querySelector(".pagination");
+  
+    function showPage(page) {
+      const start = (page - 1) * rowsPerPage;
+      const end = start + rowsPerPage;
+  
+      rows.forEach((row, index) => {
+        row.style.display = (index >= start && index < end) ? "" : "none";
+      });
+  
+      // Highlight the active page number
+      const pageLinks = paginationDiv.querySelectorAll("a");
+      pageLinks.forEach(link => link.classList.remove("active"));
+      pageLinks[page - 1]?.classList.add("active");
+    }
+  
+    function setupPagination() {
+      paginationDiv.innerHTML = ""; // Clear existing buttons
+  
+      for (let i = 1; i <= totalPages; i++) {
+        const a = document.createElement("a");
+        a.href = "#";
+        a.textContent = i;
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          showPage(i);
+        });
+        paginationDiv.appendChild(a);
+      }
+  
+      showPage(1); // Show first page on load
+    }
+  
+    setupPagination();
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Right to Service Act</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce8d5;
+      font-size: 14px;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading-box {
+      background-color: #f59c00;
+      color: white;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .breadcrumb span {
+      color: #666;
+    }
+
+    .print-button {
+      background-color: #b0b735;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .print-button:hover {
+      background-color: #9ca52d;
+    }
+
+    
+
+
+    .content p {
+      line-height: 1.6;
+      font-size: 13px;
+      color: #333;
+    }
+
+    .content a {
+      color: red;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .btn-green {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .btn-green:hover {
+      background-color: #43a047;
+    }
+
+    .btn-new::after {
+      content: "New";
+      background-color: #f1c40f;
+      color: #333;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 10px;
+      margin-left: 8px;
+    }
+    @media print {
+      .print-button, .button-group { display: none; }
+    }
+    p {
+        margin-bottom: 16px; /* You can increase/decrease the value as needed */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header placeholder -->
+  <div id="header"></div>
+
+  <main>
+    <div class="container">
+      <div class="header-section">
+        <div class="left-header">
+          <div class="heading-box">Maharashtra Right to Public Services Act, 2015</div>
+          <div class="breadcrumb">
+            » You are here : <span> » Home » Right to Service Act</span>
+          </div>
+        </div>
+        <a href="javascript:window.print();" class="print-button">🖨️ Print</a>
+      </div>
+
+      <div class="content">
+        <p>
+            The Maharashtra Right to Public Services Act, 2015 is enacted and is in force since 28.04.2015 to ensure that notified services are provided to the citizens in a transparent, speedy and time-bound manner by various Government Departments and Public Authorities under the Government. Its objective is to provide easy, prompt and time bound services to the citizens.
+        </p>
+        
+        <p>
+            The Maharashtra State Commission for Right to Public Service has been constituted under the above Act to monitor, coordinate, control and improve the public services being provided by the Government. The Commission consists of a Chief Commissioner and six Commissioners. The headquarter of the Commission is at the New Administrative Building, Opposite Mantralaya, Mumbai and the Divisional Offices of the Commissioners are at the six Divisional Headquarters.
+        </p>
+        
+        <p>
+            If any notified service is not provided to any eligible person within stipulated time or is rejected without proper grounds, the concerned person may file 1st and 2nd appeals with the higher authorities and if he is not satisfied with their decision, he may prefer third appeal to the Commission. The erring officer is liable for a penalty up to Rs 5000/- per case. Notified Services rendered by this Department are as below.
+        </p>
+        
+        <p>
+            Website of the Maharashtra State Commission for Right to Services is: 
+            <a href="https://aaplesarkar.mahaonline.gov.in" target="_blank">https://aaplesarkar.mahaonline.gov.in</a>
+        </p>
+        
+      </div>
+    
+      <div class="buttons">
+        <a href="Upload/RTS_act_2015.pdf" class="btn-green">Maharashtra Right to public services Act, 2015</a>
+        <a href="Upload/RTS_Rules_Gazette.pdf" class="btn-green">RTS Rules Gazette</a>
+        <a href="https://aaplesarkar.mahaonline.gov.in/en/CommonForm/SewaKendraDetails" class="btn-green" target="_blank">List of AapleSarkar Seva Kendra</a>
+        <a href="#" class="btn-green">List of Services notified under RTS Act - 20 Services</a>
+        <a href="#" class="btn-green">List of Services notified under RTS Act - 45 Services</a>
+        <a href="#" class="btn-green btn-new">List of Services notified under RTS Act - 36 Services</a>
+        <a href="#" class="btn-green">List of Services notified under RTS Act - 14 Services</a>
+        <a href="#" class="btn-green btn-new">RTS 115 SERVICES</a>
+      </div>
+</div>
+  </main>
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <!-- JS to load nav and footer -->
+  <script>
+    // Load header
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

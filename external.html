@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HSRP Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce8d5;
+      font-size: 14px;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .heading-box {
+      background-color: #f59c00;
+      color: white;
+      padding: 8px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 16px;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .breadcrumb span {
+      color: #666;
+    }
+
+    .icon-grid {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .icon-box {
+      text-align: center;
+      width: 140px;
+    }
+
+    .icon-box img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    .icon-box img:hover {
+  transform: rotate(180deg);
+}
+    .icon-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .icon-box p span {
+      display: block;
+      font-weight: normal;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .icon-box a {
+      text-decoration: none;
+      color: inherit;
+      transition: transform 1s ease;
+    }
+
+    .icon-box a:hover {
+      text-decoration: underline;
+      
+    }
+    /* .spin-half {
+    transition: transform 1s ease;
+    transform: rotate(180deg);
+  } */
+  </style>
+</head>
+<body>
+
+  <!-- Header placeholder -->
+  <div id="header"></div>
+
+  <main>
+    <div class="container">
+      <div class="header-section">
+        <div class="left-header">
+          <div class="heading-box">DL Services</div>
+          <div class="breadcrumb">
+            » You are here : <span> » Home » DL Services </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-grid">
+        <div class="icon-box">
+          <img src="/images/LL4.png" alt="Learner Licence">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/newLLDet.do">Apply for Learner Licence</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/driving-icon.png" alt="Driving Licence">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/newDLDet.do">Apply for Driving Licence</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/renewal-icon.png" alt="DL Renewal">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/dlServicesDet.do">Apply for DL Renewal</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/NCL1.png" alt="Duplicate DL">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/dlServicesDet.do">Apply for Duplicate DL</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/CA.png" alt="Change of Address">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/dlServicesDet.do">Change of Address</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/IDP.png" alt="IDP">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/dlServicesDet.do?q=525">Apply for IDP</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/ex.png" alt="DL Extract">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/dlServicesDet.do">DL Extract</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/feepay-icon2.png" alt="Fee Payments">
+          <p><a href="https://sarathi.parivahan.gov.in/paymentscov/">Fee Payments</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/print.png" alt="Print Forms">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/printform.do">Print Application Forms</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/withdrew-icon1.png" alt="Service Withdraw">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/confirmOrAdd_enterApplDetails.do?linkValue=serviceWithdrawn">Service Withdraw</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/dlservice-icon.png" alt="Replace DL">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/dlServicesDet.do">Replace of DL</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/camp-icon.png" alt="Add Class">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/confirmOrAdd_enterApplDetails.do?linkValue=addCovs">Add Class of Vehicles <span>to an Application</span></a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/slot-icon.png" alt="Appointments">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/confirmOrAdd_enterApplDetails.do?linkValue=addCovs">Appointments</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/testingpass-icon.png" alt="Tutorial">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/sarathiTutorials.do">LL Test Tutorial</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/status-icon3.png" alt="Pending">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/applViewStatus.do">Pending <span>Applications</span></a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/payment-icon3.png" alt="Check Payment">
+          <p><a href="https://sarathi.parivahan.gov.in/paymentscov/PayStatusVeri.jsp">Check Payment Status</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/upload-icon.png" alt="Upload">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/uploadMain.do">Upload Document</a></p>
+        </div>
+        <div class="icon-box">
+          <img src="/images/LLTest.png" alt="Online Test">
+          <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/authenticationaction.do">Online Test</a></p>
+        </div>
+        <div class="icon-box">
+            <img src="/images/doctor (1).png" alt="Doctor">
+            <p><a href="https://sarathi.parivahan.gov.in/sarathiservice/doctorsReport.do">Find Doctor</a></p>
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <!-- JS to load nav and footer -->
+  <script>
+    // Load header
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+<!-- <script>
+    // Load header
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  
+    // Load footer
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  
+    // Add spin effect on image click
+    document.addEventListener('DOMContentLoaded', function () {
+      const icons = document.querySelectorAll('.icon-box img');
+      icons.forEach(icon => {
+        icon.addEventListener('click', function () {
+          // Remove class if already spinning, then re-add to trigger animation again
+          icon.classList.remove('spin-half');
+          void icon.offsetWidth; // trigger reflow
+          icon.classList.add('spin-half');
+        });
+      });
+    });
+  </script> -->
+  
+</body>
+</html>
